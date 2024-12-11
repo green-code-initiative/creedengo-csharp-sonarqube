@@ -89,7 +89,7 @@ class CSharpRulesDefinitionTest {
     assertThat(repo.rules()).hasSize(1);
     Rule rule = repo.rules().get(0);
 
-    assertThat(rule.key()).isEqualTo("EC1000");
+    assertThat(rule.key()).isEqualTo("GCI1000");
     assertThat(rule.name()).isEqualTo("Test rule S1000");
     assertThat(rule.severity()).isEqualTo("MINOR");
     assertThat(rule.template()).isFalse();
