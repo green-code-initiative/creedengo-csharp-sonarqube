@@ -2,17 +2,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>io.ecocode</groupId>
-  <artifactId>ecocode-csharp-plugin</artifactId>
+  <groupId>org.green-code-initiative</groupId>
+  <artifactId>creedengo-csharp-plugin</artifactId>
   <version>1.5.2-SNAPSHOT</version>
 
   <packaging>sonar-plugin</packaging>
 
-  <name>ecoCode - C# language</name>
+  <name>creedengo - C# language</name>
   <description>Provides rules to reduce the environmental footprint of your C# programs</description>
   <inceptionYear>2024</inceptionYear>
 
-  <url>https://github.com/green-code-initiative/ecoCode-csharp-sonarqube</url>
+  <url>https://github.com/green-code-initiative/creedengo-csharp-sonarqube</url>
   <organization>
     <name>green-code-initiative</name>
     <url>https://github.com/green-code-initiative</url>
@@ -27,15 +27,15 @@
   </licenses>
 
   <scm>
-    <connection>scm:git:https://github.com/green-code-initiative/ecoCode-csharp-sonarqube</connection>
-    <developerConnection>scm:git:https://github.com/green-code-initiative/ecoCode-csharp-sonarqube</developerConnection>
-    <url>https://github.com/green-code-initiative/ecoCode-csharp-sonarqube</url>
+    <connection>scm:git:https://github.com/green-code-initiative/creedengo-csharp-sonarqube</connection>
+    <developerConnection>scm:git:https://github.com/green-code-initiative/creedengo-csharp-sonarqube</developerConnection>
+    <url>https://github.com/green-code-initiative/creedengo-csharp-sonarqube</url>
     <tag>HEAD</tag>
   </scm>
 
   <issueManagement>
     <system>GitHub</system>
-    <url>https://github.com/green-code-initiative/ecoCode-csharp-sonarqube/issues</url>
+    <url>https://github.com/green-code-initiative/creedengo-csharp-sonarqube/issues</url>
   </issueManagement>
 
   <properties>
@@ -58,10 +58,10 @@
     <sonar-analyzer-commons.version>2.5.0.1358</sonar-analyzer-commons.version>
     <sonar-packaging.version>1.23.0.740</sonar-packaging.version>
 
-    <!-- EcoCode rules specifications from which rules would be used -->
+    <!-- Creedengo rules specifications from which rules would be used -->
     <creedengo-rules-specifications.version>2.0.0</creedengo-rules-specifications.version>
-    <!-- EcoCode nuget package version to use to build the plugin -->
-    <nuget.package.ecocode.version>1.5.1</nuget.package.ecocode.version>
+    <!-- Creedengo nuget package version to use to build the plugin -->
+    <nuget.package.creedengo.version>1.5.1</nuget.package.creedengo.version>
   </properties>
 
   <dependencies>
@@ -152,7 +152,7 @@
         <version>3.11.0</version>
       </plugin>
       <plugin>
-        <!-- Download EcoCode nuget package and include it as part of generated plugin jar -->
+        <!-- Download Creedengo nuget package and include it as part of generated plugin jar -->
         <groupId>com.googlecode.maven-download-plugin</groupId>
         <artifactId>download-maven-plugin</artifactId>
         <version>1.3.0</version>
@@ -163,8 +163,8 @@
               <goal>wget</goal>
             </goals>
             <configuration>
-              <url>https://www.nuget.org/api/v2/package/EcoCode/${nuget.package.ecocode.version}</url>
-              <outputFileName>EcoCode.${nuget.package.ecocode.version}.zip</outputFileName>
+              <url>https://www.nuget.org/api/v2/package/Creedengo/${nuget.package.creedengo.version}</url>
+              <outputFileName>Creedengo.${nuget.package.creedengo.version}.zip</outputFileName>
               <outputDirectory>${project.build.directory}/classes/static</outputDirectory>
             </configuration>
           </execution>
@@ -176,8 +176,8 @@
         <version>${sonar-packaging.version}</version>
         <extensions>true</extensions>
         <configuration>
-          <pluginKey>ecocodecsharp</pluginKey>
-          <pluginClass>io.ecocode.csharp.CSharpPlugin</pluginClass>
+          <pluginKey>creedengocsharp</pluginKey>
+          <pluginClass>org.greencodeinitiative.creedengo.csharp.CSharpPlugin</pluginClass>
           <sonarLintSupported>true</sonarLintSupported>
           <pluginApiMinVersion>${sonar-plugin-api.version}</pluginApiMinVersion>
           <skipDependenciesPackaging>true</skipDependenciesPackaging>
@@ -229,7 +229,7 @@
               <createDependencyReducedPom>false</createDependencyReducedPom>
               <filters>
                 <filter>
-                  <artifact>io.ecocode:ecocode-rules-specifications:*</artifact>
+                  <artifact>org.green-code-initiative:creedengo-rules-specifications:*</artifact>
                   <excludes>
                     <exclude>META-INF/**</exclude>
                   </excludes>
@@ -270,7 +270,7 @@
         <configuration>
           <properties>
             <owner>Green Code Initiative</owner>
-            <email>https://www.ecocode.io</email>
+            <email>https://green-code-initiative.org</email>
           </properties>
           <licenseSets>
             <licenseSet>

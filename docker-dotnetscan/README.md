@@ -20,8 +20,8 @@ docker build -t scanner .
 #### Prerequisites
 
 You need to have an up and running Sonarqube instance with :
-- the EcoCode CSharp plugin installed
-- Quality profile with EcoCode rules activated
+- the creedengo CSharp plugin installed
+- Quality profile with creedengo rules activated
 - An user token, global or project analysis token, cf. Sonarqube documentation : [Generating and using tokens](https://docs.sonarsource.com/sonarqube/latest/user-guide/user-account/generating-and-using-tokens/)
 
 The following samples commands are based on these assumptions :
