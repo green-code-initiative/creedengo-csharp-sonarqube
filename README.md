@@ -83,8 +83,9 @@ Ready to use binaries are available [from GitHub](https://github.com/green-code-
 -----------------
 
 | Plugin version | SonarQube version   | creedengo nuget package version |
-| -------------- | ------------------- |---------------------------------|
+|----------------| ------------------- |---------------------------------|
 | 1.1.0+         | 9.9.+ LTS to 10.5.1 | 1.1.0                           |
+| 2.0.0+         | 9.9.+ LTS to 10.5.1 | 2.0.0                           |
 
 🤝 Contribution
 ---------------
