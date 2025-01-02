@@ -1,6 +1,6 @@
 /*
- * ecoCode - C# language - Provides rules to reduce the environmental footprint of your C# programs
- * Copyright © 2024 Green Code Initiative (https://www.ecocode.io)
+ * creedengo - C# language - Provides rules to reduce the environmental footprint of your C# programs
+ * Copyright © 2024 Green Code Initiative (https://green-code-initiative.org)
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -15,13 +15,14 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package io.ecocode.csharp;
+package org.greencodeinitiative.creedengo.csharp;
 
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+
 import org.junit.jupiter.api.Test;
 import org.sonar.api.PropertyType;
 import org.sonar.api.config.PropertyDefinition;

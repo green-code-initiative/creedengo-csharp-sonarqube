@@ -17,7 +17,7 @@ get_help_scanning_options() {
   echo -e "\t-t|--token\tSonarqube global or project analysis auth token."
   echo -e "or\t-l|--login\tSonarqube user auth token.\n"
   echo "Optional:"
-  echo -e "\t-p|--project\tProject key (default: ecoCode-csharp-test-project)"
+  echo -e "\t-p|--project\tProject key (default: creedengo-csharp-test-project)"
   echo -e "\t-u|--url\tUrl to Sonarqube instance (default: http://localhost:9000)"
   echo -e "\t-h|--help\tPrint this help\n"
   echo "Arguments:"
@@ -85,7 +85,7 @@ if [[ "$1" == '--' ]]; then shift; fi
 CMD_ARGS=$@
 
 # Get passed args value or set to default value
-PROJECT_KEY=${project:=ecoCode-csharp-test-project}
+PROJECT_KEY=${project:=creedengo-csharp-test-project}
 SONAR_HOST=${url:=http://localhost:9000}
 if [[ -z $CMD_ARGS ]]; then
   DOTNET_ARGS="build"

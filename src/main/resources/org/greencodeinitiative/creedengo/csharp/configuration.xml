@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<RoslynSdkConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <PluginKeyDifferentiator>creedengocsharp</PluginKeyDifferentiator>
+  <RepositoryKey>roslyn.creedengo-csharp.cs</RepositoryKey>
+  <RepositoryLanguage>cs</RepositoryLanguage>
+  <RepositoryName>creedengo</RepositoryName>
+  <PluginProperties>
+    <creedengo-csharp.cs.nuget.packageId>Creedengo</creedengo-csharp.cs.nuget.packageId>
+    <creedengo-csharp.cs.nuget.packageVersion>${nuget.package.creedengo.version}</creedengo-csharp.cs.nuget.packageVersion>
+    <creedengo-csharp.cs.analyzerId>Creedengo</creedengo-csharp.cs.analyzerId>
+    <creedengo-csharp.cs.ruleNamespace>Creedengo</creedengo-csharp.cs.ruleNamespace>
+    <creedengo-csharp.cs.staticResourceName>Creedengo.${nuget.package.creedengo.version}.zip</creedengo-csharp.cs.staticResourceName>
+    <creedengo-csharp.cs.pluginKey>creedengocsharp</creedengo-csharp.cs.pluginKey>
+    <creedengo-csharp.cs.pluginVersion>${nuget.package.creedengo.version}</creedengo-csharp.cs.pluginVersion>
+  </PluginProperties>
+</RoslynSdkConfiguration>
