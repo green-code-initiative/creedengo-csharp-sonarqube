@@ -13,6 +13,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Deleted
 
+## [2.1.0] - 2025-02-17
+
+### Changed
+
+- First official release of creedengo-csharp-sonarqube plugin (renaming ECxx rule ids to GCIxx rule ids)
+- Update creedengo-rules-specifications to 2.2.1
+- Update nuget package Creedengo to 2.1.0
+
 ## [1.5.1] - 2024-11-01
 
 ### Changed
@@ -28,6 +36,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Depend on ecocode-rules-specifications v1.5.4
 - Depend on nuget package EcoCode v1.1.0
 
-[unreleased](https://github.com/green-code-initiative/ecoCode-csharp-sonarqube/compare/1.5.1...HEAD)
-[1.5.1](https://github.com/green-code-initiative/ecoCode-csharp-sonarqube/compare/1.1.0...1.5.1)
-[1.1.0](https://github.com/green-code-initiative/ecoCode-csharp-sonarqube/releases/tag/1.1.0)
+[unreleased](https://github.com/green-code-initiative/creedengo-csharp-sonarqube/compare/2.1.0...HEAD)
+[2.1.0](https://github.com/green-code-initiative/creedengo-csharp-sonarqube/compare/1.5.1...2.1.0)
+[1.5.1](https://github.com/green-code-initiative/creedengo-csharp-sonarqube/compare/1.1.0...1.5.1)
+[1.1.0](https://github.com/green-code-initiative/creedengo-csharp-sonarqube/releases/tag/1.1.0)
