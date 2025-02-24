@@ -2,9 +2,9 @@
 <RoslynSdkConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <PluginKeyDifferentiator>creedengocsharp</PluginKeyDifferentiator>
-  <RepositoryKey>roslyn.creedengo-csharp.cs</RepositoryKey>
+  <RepositoryKey>roslyn.creedengo.cs</RepositoryKey>
   <RepositoryLanguage>cs</RepositoryLanguage>
-  <RepositoryName>creedengo</RepositoryName>
+  <RepositoryName>Creedengo</RepositoryName>
   <PluginProperties>
     <creedengo-csharp.cs.nuget.packageId>Creedengo</creedengo-csharp.cs.nuget.packageId>
     <creedengo-csharp.cs.nuget.packageVersion>${nuget.package.creedengo.version}</creedengo-csharp.cs.nuget.packageVersion>

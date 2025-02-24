@@ -46,7 +46,7 @@ public class CSharpRulesDefinition implements RulesDefinition {
   private final SonarRuntime sonarRuntime;
 
   public CSharpRulesDefinition(CSharpConfiguration config, SonarRuntime sonarRuntime) {
-    this(config, sonarRuntime, "org/greencodeinitiative/creedengo/rules/csharp");
+    this(config, sonarRuntime, "org/green-code-initiative/rules/csharp");
   }
 
   public CSharpRulesDefinition(CSharpConfiguration config, SonarRuntime sonarRuntime, String rulesResourceBasePath) {
@@ -64,7 +64,7 @@ public class CSharpRulesDefinition implements RulesDefinition {
 
       List<String> jsonRules = this.listJsonRules();
 
-      LOG.debug("C# Rules found : {}", jsonRules.size());
+      LOG.info("C# Rules found : {}", jsonRules.size());
       LOG.debug("Rule names: {}", jsonRules);
 
       RuleMetadataLoader ruleMetadataLoader = new RuleMetadataLoader(rulesResourceBasePath, sonarRuntime);

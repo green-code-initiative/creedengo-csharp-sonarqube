@@ -64,13 +64,13 @@ By default, `Dockerfile` use the official [Sonarqube LTS Community](https://hub.
 You can override this behaviour and use a custom version of your choice by specifying a `build-arg` to the build command, for example :
 
 ```sh
-docker build --build-arg SONARQUBE_VERSION=10.5.1-community .
+docker build --build-arg SONARQUBE_VERSION=25.2.0.102705-community .
 ```
 
-If you want to use the `docker-compose` file, you can use the below commands to use an overriding `dockerfile` build :
+If you want to use the `docker-compose` file, you can use the below commands to use an overrided `dockerfile` build :
 
 ```sh
-docker compose build --build-arg SONARQUBE_VERSION=10.5.1-community
+docker compose build --build-arg SONARQUBE_VERSION=25.2.0.102705-community
 docker compose up -d --no-build
 ```
 
@@ -85,7 +85,7 @@ Ready to use binaries are available [from GitHub](https://github.com/green-code-
 | Plugin version | SonarQube version   | creedengo nuget package version |
 | -------------- | ------------------- | ------------------------------- |
 | 1.1.0+         | 9.9.+ LTS to 10.5.1 | 1.1.0                           |
-| 2.1.0+         | 9.9.+ LTS to 10.5.1 | 2.1.0                           |
+| 2.1.0+         | 9.9.+ LTS and above | 2.1.0                           |
 
 🤝 Contribution
 ---------------
