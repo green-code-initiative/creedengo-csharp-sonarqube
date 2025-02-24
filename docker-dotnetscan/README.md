@@ -1,5 +1,4 @@
-.net analysis docker utility container
-===========
+# .net analysis docker utility container
 
 Docker utility container for dotnet codebase analysis that can be use to scan .net code and upload result to a Sonarqube instance.
 This container is intended to be used as a standalone tool with the docker-compose configuration provided in this repo that starts a Sonarqube instance or an existing Sonarqube instance.
@@ -30,6 +29,7 @@ Obviously, you can tag your image using `-t scanner:8.0` for example and adapt b
 #### Prerequisites
 
 You need to have an up and running Sonarqube instance with :
+
 - the creedengo CSharp plugin installed
 - Quality profile with creedengo rules activated
 - An user token, global or project analysis token, cf. Sonarqube documentation : [Generating and using tokens](https://docs.sonarsource.com/sonarqube/latest/user-guide/user-account/generating-and-using-tokens/)
