@@ -41,7 +41,7 @@
   </issueManagement>
 
   <properties>
-    <java.version>11</java.version>
+    <java.version>17</java.version>
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
     <!-- to prevent message: system modules path not set in conjunction with -source 11 -->
@@ -180,7 +180,7 @@
         <configuration>
           <pluginKey>creedengocsharp</pluginKey>
           <pluginClass>org.greencodeinitiative.creedengo.csharp.CSharpPlugin</pluginClass>
-          <sonarLintSupported>true</sonarLintSupported>
+          <sonarLintSupported>false</sonarLintSupported>
           <pluginApiMinVersion>${sonar-plugin-api.version}</pluginApiMinVersion>
           <skipDependenciesPackaging>true</skipDependenciesPackaging>
           <jreMinVersion>${java.version}</jreMinVersion>
