@@ -1,6 +1,8 @@
 # syntax=docker/dockerfile:1.0
 
-FROM mcr.microsoft.com/dotnet/sdk:8.0
+ARG DOTNET_SDK=9.0
+
+FROM mcr.microsoft.com/dotnet/sdk:${DOTNET_SDK}
 
 RUN dotnet tool install --global dotnet-sonarscanner
 RUN set -ex; \

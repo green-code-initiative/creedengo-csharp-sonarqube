@@ -1,6 +1,6 @@
 /*
- * ecoCode - C# language - Provides rules to reduce the environmental footprint of your C# programs
- * Copyright © 2024 Green Code Initiative (https://www.ecocode.io)
+ * creedengo - C# language - Provides rules to reduce the environmental footprint of your C# programs
+ * Copyright © 2024 Green Code Initiative (https://green-code-initiative.org)
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -16,6 +16,6 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 @ParametersAreNonnullByDefault
-package io.ecocode.csharp;
+package org.greencodeinitiative.creedengo.csharp;
 
 import javax.annotation.ParametersAreNonnullByDefault;

@@ -1,6 +1,6 @@
 /*
- * ecoCode - C# language - Provides rules to reduce the environmental footprint of your C# programs
- * Copyright © 2024 Green Code Initiative (https://www.ecocode.io)
+ * creedengo - C# language - Provides rules to reduce the environmental footprint of your C# programs
+ * Copyright © 2024 Green Code Initiative (https://green-code-initiative.org)
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -15,11 +15,12 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package io.ecocode.csharp;
+package org.greencodeinitiative.creedengo.csharp;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+
 import org.junit.jupiter.api.Test;
 import org.sonar.api.Plugin;
 import org.sonar.api.SonarEdition;
@@ -57,7 +58,7 @@ class CSharpPluginTest {
 
   @Test
   void pico_container_key_differentiator() {
-    assertThat(new CSharpPlugin().toString()).isEqualTo("ecocodecsharp");
+    assertThat(new CSharpPlugin().toString()).isEqualTo("creedengocsharp");
   }
 
   @SuppressWarnings({ "rawtypes", "unchecked" })

@@ -1,6 +1,6 @@
 /*
- * ecoCode - C# language - Provides rules to reduce the environmental footprint of your C# programs
- * Copyright © 2024 Green Code Initiative (https://www.ecocode.io)
+ * creedengo - C# language - Provides rules to reduce the environmental footprint of your C# programs
+ * Copyright © 2024 Green Code Initiative (https://green-code-initiative.org)
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -15,11 +15,12 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package io.ecocode.csharp;
+package org.greencodeinitiative.creedengo.csharp;
 
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
+
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.RegisterExtension;
 import org.sonar.api.SonarEdition;
@@ -89,7 +90,7 @@ class CSharpRulesDefinitionTest {
     assertThat(repo.rules()).hasSize(1);
     Rule rule = repo.rules().get(0);
 
-    assertThat(rule.key()).isEqualTo("EC1000");
+    assertThat(rule.key()).isEqualTo("GCI1000");
     assertThat(rule.name()).isEqualTo("Test rule S1000");
     assertThat(rule.severity()).isEqualTo("MINOR");
     assertThat(rule.template()).isFalse();
